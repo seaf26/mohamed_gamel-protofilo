@@ -1,19 +1,16 @@
-let navbar = document.querySelector(".navbar");
 let menu = document.querySelector(".menu");
-let links = document.getElementById("hidelinks");
 let navlinks = document.querySelector(".links");
 let button = document.querySelector(".navbar .buttton");
-let lenk = document.querySelector(".links");
+let links = document.querySelector(".links");
 let screenWidth = window.innerWidth;
 
 
-menu.addEventListener("click", () => {
-  
-  lenk.classList.toggle("show");
+menu.addEventListener("click", () => {  
+  links.classList.toggle("show");
   window.addEventListener("resize", () => {
     screenWidth = window.innerWidth;
     if (screenWidth > 995) {
-      lenk.classList.remove("show");
+      links.classList.remove("show");
     }
   });
 });
