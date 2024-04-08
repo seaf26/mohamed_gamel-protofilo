@@ -667,7 +667,7 @@ i{
 }
 
 /* Media queries for screen width up to 321px */
-@media screen and (max-width: 321px){
+@media screen and (max-width: 365px){
   .navbar {
     .logo {
       p {
