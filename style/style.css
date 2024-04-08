@@ -199,7 +199,7 @@ p {
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 100vh;
+  height: 100dvh;
   background-color: #f8f9fa;
   scroll-behavior: smooth;
   .aboutus {
@@ -244,7 +244,7 @@ p {
         color: #495057;
       }
       .buttton {
-        margin-top: 4vh;
+        margin-top: 5vh;
         margin-bottom: 8vh;
       }
     }
@@ -259,7 +259,7 @@ p {
     width: 90%;
     margin: auto;
     display: flex;
-
+    background-color: #f8f9fa;
     flex-direction: column;
     justify-content: center;
     align-items: center;
