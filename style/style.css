@@ -147,6 +147,10 @@ p {
     }
   }  
 }
+i{
+  font-size: 1.3rem;
+
+}
 /*? End of nav */
 
 /* Path: style/responsive.css */
@@ -569,7 +573,6 @@ p {
     }
   }
 }
-/* End of media queries for screen width up to 530px */
 
 /* Media queries for screen width up to 321px */
 @media screen and (max-width: 321px){
@@ -650,6 +653,7 @@ p {
     margin-top: 80px;
     width: 150px;
   }
+
 }
 /* End of media queries for screen width up to 321px */
 
