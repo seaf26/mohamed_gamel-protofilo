@@ -277,8 +277,6 @@ p {
       background-color: #f8f9fa;
       flex-wrap: wrap;
       gap: 3vw;
-      gap: 1.5vh;
-
       img {
         width: 650px;
         height: 650px;
