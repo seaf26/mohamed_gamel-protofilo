@@ -9,10 +9,12 @@
 body {
   font-family: "Open Sans", sans-serif;
   background-color: "#f8f9fa";
+  
 }
 p {
   margin-bottom: 0rem !important;
 }
+/*? Start of nav */
 .nav {
   display: flex;
   /* justify-content: space-between; */
@@ -111,6 +113,41 @@ p {
 .menu {
   display: none;
 }
+.show {
+  z-index: 1000;
+  position: absolute;
+  display: flex !important; 
+  flex-direction: column;
+  align-items: center;
+  justify-content: center !important;
+  gap: 5vh;
+  top: 0;
+  right: 0;
+  background-color: #006cd8;
+  width: 200px;
+  height: 300px;
+  margin-top: 100px;
+
+  a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center ;
+    text-decoration: none;
+    color: #fff !important  ;
+    font-size: 1.5rem;
+    font-weight: 500;
+    transition: all 0.s ease-in-out;
+    &:hover {
+      background-color: #fff !important;
+      border: none !important;
+      border-radius: 35px;
+      padding: 10px 20px;
+      color: #1675d4 !important;
+    }
+  }  
+}
+/*? End of nav */
 
 /* Path: style/responsive.css */
 @media screen and (max-width: 1136px) {
@@ -120,67 +157,7 @@ p {
     }
   }
 }
-/* @media screen and (max-width: 1002px) {
-  .navbar {
-    button {
-      display: none;
-    }
-    .menu {
-      display: flex;
-      font-size: 2rem;
-      color: #495057;
-      cursor: pointer;
-    }
-    .links {
-      position: absolute;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      top: 100%;
-      right: 0;
-      background-color: #006cd8;
-      width: 200px;
-      display: none;
-      a {
-        text-decoration: none;
-        color: #fff;
-        margin: 22px 0;
-        font-size: 1.5rem;
-        font-weight: 500;
-        transition: all 0.3s ease-in-out;
-        &:hover {
-          color: #1675d4;
-        }
-      }
-    }
-  }
-} */
-.show {
-  z-index: 1000;
-  height: 20vh;
-  position: absolute;
-  display: flex !important; 
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  top: 0;
-  right: 0;
-  background-color: #006cd8;
-  width: 20px;
 
-  a {
-    text-decoration: none;
-    color: #fff;
-    margin: 22px 0;
-    font-size: 1.5rem;
-    font-weight: 500;
-    transition: all 0.3s ease-in-out;
-    &:hover {
-      color: #1675d4;
-    }
-  }  
-}
 /* welcome */
 .welcome-home {
   scroll-behavior: smooth;
@@ -478,6 +455,7 @@ p {
 .footer .buttton button:hover {
   background-color: #0a58ca;
 }
+/* Media queries for screen width up to 1024px */
 @media screen and (max-width: 1024px) {
   .footer {
     flex-direction: column;
@@ -499,12 +477,12 @@ p {
     margin-left: 2vw;
   }
 }
-/* end of footer */
+/* End of media queries for screen width up to 1024px */
 
+/* Media queries for screen width up to 1117px */
 @media screen and (max-width: 1117px) {
   .boxes {
     display: flex;
-    /* flex-wrap: wrap; */
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -512,7 +490,7 @@ p {
     margin-top: 5vh;
   }
   #mail {
-    padding: 2vh 2vw;
+    padding: 2vh 1vw !important;
   }
   #pho {
     padding: 2vh 10vw;
@@ -521,8 +499,10 @@ p {
     padding: 2vh 10vw;
   }
 }
+/* End of media queries for screen width up to 1117px */
 
-@media screen and (max-width: 430px) {
+/* Media queries for screen width up to 530px */
+@media screen and (max-width: 530px) {
   .navbar {
     .logo {
       p {
@@ -546,8 +526,6 @@ p {
       align-items: center;
 
       .image {
-        /* margin-right: 3vw; */
-
         img {
           width: 300px;
           height: 300px;
@@ -590,9 +568,11 @@ p {
     a {
       margin-top: 1vw;     
     }
+  }
 }
-}
+/* End of media queries for screen width up to 530px */
 
+/* Media queries for screen width up to 321px */
 @media screen and (max-width: 321px){
   .navbar {
     .logo {
@@ -604,10 +584,8 @@ p {
         height: 60px;
       }
     }
-   
   }
   .about {
-
     .aboutus {
       .image {
         img {
@@ -649,7 +627,6 @@ p {
 
   .contact {
     display: flex;
-    /* flex-wrap: wrap; */
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -663,17 +640,17 @@ p {
       margin-top: 6vh;
     }
     .boxes {
-      
       .box {
-      
         a {
-         
           font-size: 1rem;
-          
-         
-        }}
+        }
       }
     }
-
+  }
+  .show{
+    margin-top: 80px;
+    width: 150px;
+  }
 }
+/* End of media queries for screen width up to 321px */
 

@@ -3,18 +3,21 @@ let menu = document.querySelector(".menu");
 let links = document.getElementById("hidelinks");
 let navlinks = document.querySelector(".links");
 let button = document.querySelector(".navbar .buttton");
-
-console.log(navbar);
-console.log(menu);
-console.log(links);
-console.log(navlinks);
-console.log(button);
-
-// menu.addEventListener("click", () => {
-//     navbar.classList.toggle("show");
-// });
-
+let lenk = document.querySelector(".links");
 let screenWidth = window.innerWidth;
+
+
+menu.addEventListener("click", () => {
+  
+  lenk.classList.toggle("show");
+  window.addEventListener("resize", () => {
+    screenWidth = window.innerWidth;
+    if (screenWidth > 995) {
+      lenk.classList.remove("show");
+    }
+  });
+});
+
 window.addEventListener("resize", () => {
   screenWidth = window.innerWidth;
   if (screenWidth > 995) {
