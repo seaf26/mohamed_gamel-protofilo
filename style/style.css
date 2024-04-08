@@ -259,11 +259,10 @@ p {
     width: 90%;
     margin: auto;
     display: flex;
-    background-color: #f8f9fa;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
+    
     h2 {
       font-size: 3rem;
       font-weight: 700;
@@ -275,6 +274,7 @@ p {
       display: flex;
       justify-content: center;
       align-items: center;
+      background-color: #f8f9fa;
       flex-wrap: wrap;
       gap: 3vw;
 
